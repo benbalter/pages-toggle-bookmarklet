@@ -6,7 +6,7 @@ if window.location.hostname == "github.com"
   repo  = parts[2]
   url   = "http://#{owner}.github.io"
 
-  if repo.match /#{owner}.github.(io|com)/
+  if repo.match /#{owner}.github.(io|com)/i
     window.location = url
   else
     window.location = "#{url}/#{repo}"
