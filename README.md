@@ -8,7 +8,7 @@ A bookmarklet to toggle between GitHub Pages site and source
 
 If you're on a GitHub Pages site like `https://sroberts.github.io/`, clicking the bookmarlet will redirect you to `https://github.com/sroberts/sroberts.github.io`.
 
-If you're on a GitHub Pages repo like 'https://github.com/benbalter/benbalter.github.io', clicking the bookmarklet will redirect you to `http://ben.balter.com`.
+If you're on a GitHub Pages repo like `https://github.com/benbalter/benbalter.github.io`, clicking the bookmarklet will redirect you to `http://ben.balter.com`.
 
 If you're on a GitHub Pages site like `http://ben.balter.com`, clicking the bookmarklet will do absolutely nothing. That's crazy talk.
 
