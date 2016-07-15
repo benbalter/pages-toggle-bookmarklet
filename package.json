@@ -1,0 +1,26 @@
+{
+  "name": "pages-toggle-bookmarklet",
+  "version": "1.0.0",
+  "description": "A bookmarklet to toggle between GitHub Pages site and source",
+  "main": "dist/bookmark.js",
+  "scripts": {
+    "test": "script/cibuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benbalter/pages-toggle-bookmarklet"
+  },
+  "author": "Ben Balter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benbalter/pages-toggle-bookmarklet/issues"
+  },
+  "dependencies": {
+    "coffee-script": "^1.10.0",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-coffee": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}

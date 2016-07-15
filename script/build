@@ -1,0 +1,12 @@
+#!/bin/sh
+
+set -e
+
+grunt build
+
+rm -f index.html
+
+template=`cat src/index.html`
+script=`cat dist/bookmark.js`
+
+echo "${template/_SRC_/$script}" >> index.html
