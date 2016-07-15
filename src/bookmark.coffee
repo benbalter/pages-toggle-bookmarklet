@@ -1,5 +1,6 @@
-host = window.location.hostname
-path = window.location.pathname
+location = window.location
+host = location.hostname
+path = location.pathname
 
 # Source -> Site
 if host == "github.com"
