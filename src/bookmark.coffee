@@ -1,7 +1,8 @@
-location = window.location
+host = window.location.hostname
+path = window.location.pathname
 
-if window.location.hostname == "github.com"
-  parts = window.location.pathname.split("/")
+if host == "github.com"
+  parts = path.split("/")
   owner = parts[1]
   repo  = parts[2]
   url   = "http://#{owner}.github.io"
@@ -11,12 +12,12 @@ if window.location.hostname == "github.com"
   else
     window.location = "#{url}/#{repo}"
 
-else if window.location.hostname.match(/[a-z0-9-]+\.github.(io|com)$/i)
-  owner = window.location.hostname.split(".")[0]
+else if host.match(/[a-z0-9-]+\.github.(io|com)$/i)
+  owner = host.split(".")[0]
 
-  if window.location.pathname == "/"
+  if path == "/"
     repo = "#{owner}.github.io"
   else
-    repo = window.location.pathname.split("/")[1]
+    repo = path.split("/")[1]
 
   window.location = "https://github.com/#{owner}/#{repo}"
