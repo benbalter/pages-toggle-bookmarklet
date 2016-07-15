@@ -7,12 +7,12 @@ if host == "github.com"
   repo  = parts[2]
   url   = "http://#{owner}.github.io"
 
-  if repo.match /#{owner}.github.(io|com)/i
+  if repo.match /^#{owner}\.github\.(io|com)$/i
     window.location = url
   else
     window.location = "#{url}/#{repo}"
 
-else if host.match(/[a-z0-9-]+\.github.(io|com)$/i)
+else if host.match(/[a-z0-9-]+\.github\.(io|com)$/i)
   owner = host.split(".")[0]
 
   if path == "/"
